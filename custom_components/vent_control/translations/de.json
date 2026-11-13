@@ -1,0 +1,27 @@
+{
+  "services": {
+    "set_enabled": {
+      "name": "Lüfter ein-/ausschalten",
+      "description": "Schaltet die Automatik eines Lüfters aktiv oder inaktiv (ID siehe Attribut units von sensor.<raum>_vent_control).",
+      "fields": {
+        "unit_id": {"name": "Lüfter-ID", "description": "ID des Lüfters"},
+        "enabled": {"name": "Aktiv", "description": "true = Automatik aktiv"}
+      }
+    },
+    "run": {
+      "name": "Jetzt lüften",
+      "description": "Schaltet den Lüfter für die angegebene Zeit ein (Automatik pausiert so lange). 0 = Automatik sofort wieder.",
+      "fields": {
+        "unit_id": {"name": "Lüfter-ID", "description": "ID des Lüfters"},
+        "minutes": {"name": "Minuten", "description": "Laufzeit"}
+      }
+    },
+    "set_master": {
+      "name": "Hauptschalter",
+      "description": "Schaltet die Lüftungssteuerung im ganzen Haus ein oder aus.",
+      "fields": {
+        "enabled": {"name": "Ein", "description": "true = Lüftungssteuerung ein"}
+      }
+    }
+  }
+}

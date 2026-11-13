@@ -1,0 +1,23 @@
+{
+  "domain": "vent_control",
+  "name": "Ventilation Control",
+  "after_dependencies": [
+    "fan",
+    "switch",
+    "light",
+    "input_boolean",
+    "input_text",
+    "binary_sensor"
+  ],
+  "codeowners": [
+    "@SysriX"
+  ],
+  "dependencies": [
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/SysriX/vent_control_ha_integration",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/SysriX/vent_control_ha_integration/issues",
+  "requirements": [],
+  "version": "1.2.0"
+}

@@ -1,0 +1,27 @@
+{
+  "services": {
+    "set_enabled": {
+      "name": "Enable or disable fan",
+      "description": "Enables or disables the automation of a fan unit (ID: see attribute units of sensor.<room>_vent_control).",
+      "fields": {
+        "unit_id": {"name": "Fan ID", "description": "ID of the fan unit"},
+        "enabled": {"name": "Enabled", "description": "true = automation enabled"}
+      }
+    },
+    "run": {
+      "name": "Ventilate now",
+      "description": "Turns the fan on for the given time (automation paused meanwhile). 0 = return to automation immediately.",
+      "fields": {
+        "unit_id": {"name": "Fan ID", "description": "ID of the fan unit"},
+        "minutes": {"name": "Minutes", "description": "Run time"}
+      }
+    },
+    "set_master": {
+      "name": "Master switch",
+      "description": "Turns the ventilation control on or off for the whole house.",
+      "fields": {
+        "enabled": {"name": "On", "description": "true = ventilation control on"}
+      }
+    }
+  }
+}
