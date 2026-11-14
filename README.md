@@ -2,6 +2,9 @@
 
 Fan control per room for Home Assistant: fans run after motion, on high humidity or poor air quality, or at intervals – with run-on, minimum and maximum run time, window lock, quiet hours and manual override.
 
+![Ventilation Control preview](docs/images/preview.png)
+*Ventilation tab in the [Room Panel card](https://github.com/SysriX/room_panel_ha_card): fan running because of motion + humidity, live sensor values and recent switching (UI in German)*
+
 Integration domain: `vent_control`  
 Version: 1.2.0  
 UI language of the built-in texts (reasons, names): German
